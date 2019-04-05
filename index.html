@@ -9,24 +9,19 @@
 <div>
 <h2 id="questionOne">Question 1</h2>
 <p>What is the name of the NBA franchise that is located in Toronto?</p>
-    <input class="correctAnswer" id="correctAnswer" type="radio" name="teamName" value="celtics"> Celtics <br>
-    <input class="wrongAnswer" type="radio" name="teamName" value="grizzlies"> Grizzlies <br>
-    <input class="wrongAnswer" type="radio" name="teamName" value="raptors"> Raptors <br>
-    <input class="wrongAnswer" type="radio" name="teamName" value="timberwolves"> Timberwolves <br><br>
+    <label for="correctAnswer"></label><input class="radioButton" id="correctAnswer" type="radio" name="teamName" value="celtics"> Celtics <br>
+    <label>
+        <input class="radioButton" type="radio" name="teamName" value="grizzlies">
+    </label> Grizzlies <br>
+    <label>
+        <input class="radioButton" type="radio" name="teamName" value="raptors">
+    </label> Raptors <br>
+    <label>
+        <input class="radioButton" type="radio" name="teamName" value="timberwolves">
+    </label> Timberwolves <br><br>
     <button onclick="checkAnswer()" id="scoring">Next</button>
 </div>
 <p id="result"></p>
 <script src="script.js"></script>
 </body>
 </html>
-
-
-<!--1. App should ask the user a question-->
-    <!-- - user should be able to select one answer-->
-    <!-- - user should be able to select multiple answers-->
-    <!-- - questions should be rendered randomly through a JS object-->
-
-<!--2. One question on the page at a time-->
-    <!-- - 'next' button-->
-
-<!--3. After the 5 questions the user will see a score rendered on the screen-->

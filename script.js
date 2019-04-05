@@ -1,21 +1,13 @@
 function checkAnswer() {
-    const selectedAnswer = document.getElementsByClassName('radioButton').value;
+    const selectedAnswer = document.getElementsByClassName('radioButton').checked;
     const correctAnswer = document.getElementById('correctAnswer');
 
-    if (selectedAnswer !== correctAnswer) {
-        document.write('Sorry, that is incorrect.')
+    if (selectedAnswer === correctAnswer) {
+        document.write('Great Job!')
     } else {
-        document.write('Great job!')
+        document.write('Sorry, that is incorrect')
     }
-    }
-
-// checkAnswer = function() {
-// if (selectedAnswer === correctAnswer) {
-//     document.write('Great job!')
-// } else {
-//     document.write('Sorry, that is incorrect.')
-// }
-// };
+}
 
 
 
