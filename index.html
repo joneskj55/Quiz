@@ -9,17 +9,19 @@
 <div>
 <h2 id="questionOne">Question 1</h2>
 <p>What is the name of the NBA franchise that is located in Toronto?</p>
-    <label for="correctAnswer"></label><input class="radioButton" id="correctAnswer" type="radio" name="teamName" value="celtics"> Celtics <br>
     <label>
-        <input class="radioButton" type="radio" name="teamName" value="grizzlies">
-    </label> Grizzlies <br>
+        <input class="radioButton" type="radio" name="teamName" value="celtics"> Celtics
+    </label><br>
     <label>
-        <input class="radioButton" type="radio" name="teamName" value="raptors">
-    </label> Raptors <br>
+        <input class="radioButton" type="radio" name="teamName" value="grizzlies"> Grizzlies
+    </label><br>
+    <label for="correctAnswer">
+        <input class="radioButton" id="correctAnswer" type="radio" name="teamName" value="raptors"> Raptors
+    </label><br>
     <label>
-        <input class="radioButton" type="radio" name="teamName" value="timberwolves">
-    </label> Timberwolves <br><br>
-    <button onclick="checkAnswer()" id="scoring">Next</button>
+        <input class="radioButton" type="radio" name="teamName" value="timberwolves"> Timberwolves
+    </label><br><br>
+    <button onclick="checkAnswer()">Next</button>
 </div>
 <p id="result"></p>
 <script src="script.js"></script>
