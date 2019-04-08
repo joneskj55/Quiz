@@ -10,3 +10,5 @@ function checkAnswer() {
             console.log(correctAnswer + ' ' + selectedAnswer);
         }
 }
+
+//test
