@@ -11,11 +11,37 @@ function checkAnswer() {
     }
 }
 
-// exploring using an object to store questions
-const questions = {
-    questionOne: '',
-    correctAnswer: '',
-    wrongAnswerOne: '',
-    wrongAnswerTwo: '',
-    wrongAnswerThree:'',
+const quiz = [
+    {
+        questionOne: 'What is the name of the NBA franchise that is located in Toronto?',
+        answers: ['Celtics', 'Grizzlies', 'Raptors', 'Timberwolves'],
+        correctAnswer: 'Raptors'
+    },
+    {
+        questionTwo: 'Who is the best NBA player of all time?',
+        answers: ['Michael Jordan', 'Magic Johnson', 'LeBron James', 'Kareem Abdul-Jabbar'],
+        correctAnswer: 'Michael Jordan'
+    },
+    {
+        questionThree: 'What is the name of the NBA franchise that is located in Toronto?',
+        answers: ['Celtics', 'Grizzlies', 'Raptors', 'Timberwolves'],
+        correctAnswer: 'Raptors'
+    },
+    {
+        questionFour: 'What is the name of the NBA franchise that is located in Toronto?',
+        answers: ['Celtics', 'Grizzlies', 'Raptors', 'Timberwolves'],
+        correctAnswer: 'Raptors'
+    },
+    {
+        questionFive: 'What is the name of the NBA franchise that is located in Toronto?',
+        answers: ['Celtics', 'Grizzlies', 'Raptors', 'Timberwolves'],
+        correctAnswer: 'Raptors'
+    }
+];
+
+const view = {
+    displayQuestions: function () {
+
+    }
 };
+
