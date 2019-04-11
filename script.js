@@ -13,27 +13,27 @@ function checkAnswer() {
 
 const quiz = [
     {
-        questionOne: 'What is the name of the NBA franchise that is located in Toronto?',
+        question: 'What is the name of the NBA franchise that is located in Toronto?',
         answers: ['Celtics', 'Grizzlies', 'Raptors', 'Timberwolves'],
         correctAnswer: 'Raptors'
     },
     {
-        questionTwo: 'Who is the best NBA player of all time?',
+        question: 'Who is the best NBA player of all time?',
         answers: ['Michael Jordan', 'Magic Johnson', 'LeBron James', 'Kareem Abdul-Jabbar'],
         correctAnswer: 'Michael Jordan'
     },
     {
-        questionThree: 'What is the name of the NBA franchise that is located in Toronto?',
+        question: 'What is the name of the NBA franchise that is located in Toronto?',
         answers: ['Celtics', 'Grizzlies', 'Raptors', 'Timberwolves'],
         correctAnswer: 'Raptors'
     },
     {
-        questionFour: 'What is the name of the NBA franchise that is located in Toronto?',
+        question: 'What is the name of the NBA franchise that is located in Toronto?',
         answers: ['Celtics', 'Grizzlies', 'Raptors', 'Timberwolves'],
         correctAnswer: 'Raptors'
     },
     {
-        questionFive: 'What is the name of the NBA franchise that is located in Toronto?',
+        question: 'What is the name of the NBA franchise that is located in Toronto?',
         answers: ['Celtics', 'Grizzlies', 'Raptors', 'Timberwolves'],
         correctAnswer: 'Raptors'
     }
@@ -41,7 +41,8 @@ const quiz = [
 
 const view = {
     displayQuestions: function () {
-
+        const questionP = document.querySelector('p');
+        quiz.question.innerHTML = '';
     }
 };
 
