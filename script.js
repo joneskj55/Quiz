@@ -30,12 +30,12 @@ const keys = Object.keys(quiz);
 const randomIndex = keys[Math.floor(Math.random() * keys.length)];
 const item = quiz[randomIndex];
 const randomQuestion = item.question;
-//console.log(randomQuestion);
 
 function displayQuestion() {
     document.getElementById('question').innerHTML = randomQuestion;
+    // if question has been asked, it should not be asked again
+    // should move to next random question after user submits answer
 }
-
 
 function checkAnswer() {
     const correctAnswer = document.getElementById('correctAnswer').value;
@@ -50,12 +50,6 @@ function checkAnswer() {
     }
 }
 
-
-// // function to display random question
-// function randomQuestion() {
-//     // if question has already been asked, it should not be asked again
-//     // should move to next random question after user submits answer
-// }
 
 
 
