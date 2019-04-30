@@ -26,15 +26,19 @@ const quiz = [
     }
 ];
 
+// get random question
 const keys = Object.keys(quiz);
 const randomIndex = keys[Math.floor(Math.random() * keys.length)];
 const item = quiz[randomIndex];
 const randomQuestion = item.question;
 
+// get values starting point (not complete)
+const values = Object.values(quiz);
+console.log(values[0]);
+
 function displayQuestion() {
     document.getElementById('question').innerHTML = randomQuestion;
-    // if question has been asked, it should not be asked again
-    // should move to next random question after user submits answer
+    // display corresponding answers to random question
 }
 
 function checkAnswer() {
@@ -49,7 +53,4 @@ function checkAnswer() {
         console.log(correctAnswer + ' ' + selectedAnswer);
     }
 }
-
-
-
 
